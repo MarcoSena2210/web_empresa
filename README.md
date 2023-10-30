@@ -11,8 +11,11 @@ Output
 ```
 Switched to a new branch stable
 ```
-### Enviando para nosso repositório
-$ ```git push origin stable```
+### Enviando para branc stable do nosso repositório remoto
+$
+```
+git push origin stable
+```
 
 Output
 ```
@@ -24,3 +27,17 @@ remote:
 To https://github.com/MarcoSena2210/web_empresa.git
  * [new branch]      stable -> stable
 ```
+
+### Fazendo o commit localmente
+```
+git add .
+git commit -m "Primeiro commit" 
+```
+Output
+```
+[stable b0b1044] Primeiro commit
+ 2 files changed, 25 insertions(+)
+ create mode 100644 primeiro_commit.txt
+```
+### Navegando para branch main 
+git checkout main
