@@ -41,3 +41,63 @@ Output
 ```
 ### Navegando para branch main 
 git checkout main
+
+$
+```
+ git checkout main
+ ```
+
+Output
+```
+
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+msena@DESKTOP-NU65P6S MINGW64 /d/Projetos/WEB/web_empresa (main)
+
+```
+### Para saber qual branch estamos 
+
+```
+git status
+
+```
+
+### Para atualizar a branch main
+
+```
+ git merge stable 
+ 
+```
+Output
+
+```
+Updating bedd26d..943b3c1
+Fast-forward
+ README.md           | 41 +++++++++++++++++++++++++++++++++++++++++
+ primeiro_commit.txt |  1 +
+ 2 files changed, 42 insertions(+)
+ create mode 100644 primeiro_commit.txt
+
+```
+### Para enviar para repositorio remoto as atualizações da main
+ ```
+ git push
+```
+Output
+
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MarcoSena2210/web_empresa.git
+   bedd26d..943b3c1  main -> main
+
+```
+
+### Ir para o repositorio main e verificar se atualizou
+
+### Voltando para branck stable
+```
+git checkout stable
+```
+Output
+Switched to branch 'stable' 
+```
