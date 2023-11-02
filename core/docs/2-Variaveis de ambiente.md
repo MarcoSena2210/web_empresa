@@ -1,6 +1,7 @@
 # Configurando variáveis de ambiente usando python-dotenv.
 Dev: Marco Sena
 Creditos: Professora Letícia Lima 
+Email: leticialimacgi@gmail.com
 
 Link: https://pypi.org/project/python-dotenv/
 

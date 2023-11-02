@@ -1,8 +1,9 @@
 1-Ambiente Virtual Linux/Windows
 Dev: Marco Sena
 Creditos: :Professora  Letícia Lima 
-Criar o ambiente virtual Linux/Windows
+Email: leticialimacgi@gmail.com
 
+# Criar o ambiente virtual Linux/Windows
 ## Windows
 
 python -m venv .venv
@@ -52,6 +53,8 @@ python manage.py runserver
 
 ```
 git checkout -b parte01_config_static
+
+
 
 ```
 
