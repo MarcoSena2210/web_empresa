@@ -1,5 +1,8 @@
 # web_empresa
 Curso de djando udemy
+Dev: Marco Sena
+Creditos: :Professora  Letícia Lima 
+Email: leticialimacgi@gmail.com
 
 ### Criando uma nova branch stable
 
