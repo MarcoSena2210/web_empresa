@@ -102,6 +102,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'requestlogs.middleware.RequestLogsMiddleware',#logs incluso pelo dev
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -159,6 +160,38 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# garante a entrada no requestlogs para todos os dados possíveis
+# entrada e saida de log
+REST_FRAMEWORK={
+    'EXCEPTION_HANDLER': 'requestlogs.views.exception_handler',
+}
+
+# Logs
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'requestlogs_to_file': {
+        'level': 'INFO',
+        'class': 'logging.FileHandler',
+        'filename': 'info.log', # Nome do arquio de log  
+        },
+    },
+    'loggers': {
+        'requestlogs': {
+        'handlers': ['requestlogs_to_file'],
+        'level': 'INFO',
+        'propagate': False,
+        },
+    },
+}
+
+## Vai criptogravar dados sensiveis
+REQUESTLOGS = {
+    'SECRETS': ['password', 'token'],
+    'METHODS': ('PUT', 'PATCH', 'POST', 'DELETE'),
+}
 
 
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
