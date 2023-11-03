@@ -4,7 +4,7 @@
 
 ### Autor: Marco Sena :computer:
 
-[githug](https://github.com/MarcoSena2210/web_empresa)
+[Github](https://github.com/MarcoSena2210/web_empresa)
 
 ### Créditos: Professora Letícia Lima (Udemy)
 

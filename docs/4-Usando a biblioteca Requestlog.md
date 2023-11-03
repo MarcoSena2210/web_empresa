@@ -1,7 +1,7 @@
 # Usando Requestlog
 
 ### Autor: Marco Sena :computer:
-[githug](https://github.com/MarcoSena2210/web_empresa)
+[Github](https://github.com/MarcoSena2210/web_empresa)
 ### Créditos: Professora Letícia Lima (Udemy)
 
 # Django-requestlogs
@@ -12,7 +12,7 @@ problemas. O pacote também fornece uma interface web para visualização dos lo
 Precisamos Instalar essa biblioteca.
 Documentação: <https://pypi.org/project/django-requestlogs/>
 
-# 1. Criando a 3ª Branch do projeto
+## 1. Criando a 3ª Branch do projeto
 ```
 git checkout -b parte03_config_cors_cookies
 ```
@@ -22,7 +22,7 @@ git checkout -b parte03_config_cors_cookies
 pip install django-requestlogs
 ```
 
-### recriar o requiriments(Atualizar)
+### Recriar o requiriments(Atualizar)
 pip freeze > requirements.txt
 
 ## Adicionar no core/settings.py
